@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div id="intro">
+    <video id="introVideo" autoplay muted>
+      <source src="dudu playground.mp4" type="video/mp4">
+    </video>
+
+    <button id="skipBtn">Skip</button>
+  </div>
+
+<div id="mainContent">
+ 
+<div id="header">
+
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <img src="image1.png" height="90" width="80" alt="logo">
+    <p>Dudu Playground</p>
+  </div>
+  <section>
+    <a href="#home">Home</a>
+    <a href="#game">Games</a>
+    <a href="#embed">Embed</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact Us</a>
+  </section>
+</div>
+<center>
+<section class="main">
+
+  <div class="text">
+    <br><br><br><p class="label"><strong>Proudly powered by Dudu 🚀</strong></p>
+
+    <h1 id="head">Play games instantly,<br>no limits</h1>
+
+    <p id="par">
+      Welcome to Dudu Playground — your chill zone for gaming 🎮.<br> 
+      Just open, click, and start playing. Want more? Drop any game<br> iframe link 
+      and play your own favorite games instantly. No<br> downloads, no waiting — just pure fun.
+    </p>
+    <form id="embed">
+      <center><button style="padding: 10px;
+  background: #7741f7;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;"onclick="openembed()" >
+  <a href="Embed.html" style="color: white; text-decoration: none; "target="abc">Embed Your Game</a></button></center>
+</form>
+  </div>
+
+  <div class="game">
+    <img src="download (2).jpg" style="border-radius: 10px; height: 400px; width:350px" alt="" loading="lazy">
+  </div>
+
+</section></center><br><br>
+<hr style="color:rgb(0, 1, 2);height:4px;">
+<section class="games" id="game">
+  <h1>🎮 Try Some Games</h1>
+  <h1><a href="https://zv1y2i8p.play.gamezop.com/g/9lpHai56Q" style="text-decoration:none;color:white;"">Assasin's Hunt</a></h1>
+<iframe loading="lazy" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0" style="width: 350px;height: 450px;border: 0px; " src="https://zv1y2i8p.play.gamezop.com/g/9lpHai56Q"> </iframe>
+<h1><a href="https://zv1y2i8p.play.gamezop.com/g/9lpHai56Q" style="text-decoration:none;color:white;">Ludo With Friends</a></h1>
+
+<iframe loading="lazy"seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0" style="width: 350px;height: 450px;border: 0px;" src="https://zv1y2i8p.play.gamezop.com/g/SkhljT2fdgb"> </iframe>
+  <div class="game-grid">
+   </div>
+</section>
+<footer class="footer">
+
+  <div class="footer-container">
+
+  
+    <div class="footer-left">
+      <h2>Dudu Playground</h2>
+      <p>
+        A fun gaming platform where you can play embedded games 
+        or add your own and enjoy instantly 🎮.
+      </p>
+
+      <div class="social">
+    <a href="https://www.instagram.com/maharudra_123?igsh=ZW5lbGV5Y2NuaHRz" target="abc"><img src="icons8-instagram-48.png" height="30" width="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="www.linkedin.com/in/maharudra-dudhe-69320033a" target="abc"><img src="icons8-linkedin-50.png"height="30" width="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="https://github.com/mdudhe2007" target="abc"><img src="25231.png" height="30" width="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        
+  </div>
+    </div>
+
+   
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <a href="#">Home</a>
+      <a href="#">Games</a>
+      <a href="#">Embed</a>
+      <a href="#">About</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>Resources</h3>
+      <a href="#">Guide</a>
+      <a href="#">FAQs</a>
+      <a href="#">Docs</a>
+    </div>
+
+ 
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+<form id="sebmit">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <br>
+      <center><button onclick="send()" >Send</button></center>
+</form>
+      <p class="terms">
+        By submitting, you agree to our terms & privacy policy.
+      </p>
+    </div>
+
+  </div>
+
+  <p class="copyright">
+    © 2026 Dudu Playground 
+  </p>
+
+</footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+    const video = document.getElementById("introVideo");
+    const intro = document.getElementById("intro");
+    const main = document.getElementById("mainContent");
+    const skipBtn = document.getElementById("skipBtn");
+
+    function showMain() {
+      intro.classList.add("fade-out");
+      setTimeout(() => {
+        intro.style.display = "none";
+        main.style.display = "block";
+      }, 800);
+    }
+
+   
+    video.onended = showMain;
+
+  
+    skipBtn.onclick = showMain;
+     openembed()
+    {
+        let a = document.getElementById("embed");
+       window.open("Embed.html","_blank");
+        
+       
+    }
+    send()
+    {
+        let a = document.getElementById("sebmit");
+        alert("Thanks For Contacting Us !");
+        a.reset();
+        
+       
+    }
+  </script>
+</body>
+</html>

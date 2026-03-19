@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embed Game | Dudu Playground</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #fc7bb5 0%,
+    #9d48ec 40%,
+    #43418b 70%,
+    #2e4160 100%
+  );
+}
+
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0f172a, #1e1b4b, #000000);
+  padding: 10px 20px;
+}
+
+#header section {
+  display: flex;
+  gap: 20px;
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  padding-right: 20px;
+}
+
+#header p {
+  margin: 0;
+  color: rgb(166, 81, 208);
+  font-size: 35px;
+  font-family: Impact, Haettenschweiler, sans-serif;
+}
+
+
+.main {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.main h2 {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #7e22ce;
+}
+
+
+#gameContainer {
+  margin-top: 30px;
+}
+
+iframe {
+  width: 80%;
+  height: 500px;
+  border-radius: 10px;
+  border: none;
+}
+
+.footer {
+  background: #020617;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  width: 250px;
+}
+
+.footer-links, .footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #c084fc;
+  text-decoration: none;
+}
+
+.footer-contact input {
+  margin: 5px 0;
+  padding: 8px;
+}
+
+.footer-contact button {
+  margin-top: 5px;
+}
+
+.social img {
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+
+<div id="header">
+  <div style="display:flex; align-items:center; gap:10px;">
+    <img src="image1.png" height="80">
+    <p>Dudu Playground</p>
+  </div>
+
+  <section>
+    <a href="index.html">Home</a>
+    <a href="index.html#game">Games</a>
+    <a href="embed.html">Embed</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </section>
+</div>
+
+
+<div class="main">
+  <h2>Paste Game Link 🎮</h2>
+
+  <input type="text" id="gameUrl" placeholder="Enter iframe/game URL">
+  <button onclick="loadGame()">Play</button>
+
+  <div id="gameContainer"></div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <h2>Dudu Playground</h2>
+      <p>
+        A fun gaming platform where you can play embedded games 
+        or add your own and enjoy instantly 🎮.
+      </p>
+
+      <div class="social">
+        <a href="https://www.instagram.com/maharudra_123" target="_blank">
+          <img src="icons8-instagram-48.png" height="30">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="icons8-linkedin-50.png" height="30">
+        </a>
+        <a href="https://github.com/mdudhe2007" target="_blank">
+          <img src="25231.png" height="30">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <a href="index.html">Home</a>
+      <a href="#">Games</a>
+      <a href="embed.html">Embed</a>
+      <a href="#">About</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>Resources</h3>
+      <a href="#">Guide</a>
+      <a href="#">FAQs</a>
+      <a href="#">Docs</a>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+
+      <form onsubmit="send(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <button type="submit">Send</button>
+      </form>
+
+      <p style="font-size:12px;">
+        By submitting, you agree to our terms & privacy policy.
+      </p>
+    </div>
+
+  </div>
+
+  <p class="copyright">© 2026 Dudu Playground</p>
+</footer>
+
+
+<script>
+function loadGame() {
+  const url = document.getElementById("gameUrl").value;
+
+  if (!url) {
+    alert("Please enter a valid URL");
+    return;
+  }
+
+  document.getElementById("gameContainer").innerHTML =
+    `<iframe src="${url}"></iframe>`;
+}
+
+function send(e) {
+  e.preventDefault();
+  alert("Message sent! 🚀");
+}
+</script>
+
+</body>
+</html>
