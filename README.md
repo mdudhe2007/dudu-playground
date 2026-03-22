@@ -19,21 +19,29 @@ A fun and interactive gaming website where users can **play games instantly** or
 
 ### 🎥 Watch Intro Video
 [Click here to watch](./dudu%20playground.mp4)
-
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header"/>
+</p>
 ### 🏠 Home Page
 
 ![Home](./screenshots/home.png)
-
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header"/>
+</p>
 ### 🎮 Games Section
 
 ![Games](./screenshots/games.png)
-
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header"/>
+</p>
 ### 🔗 Embed Page
 
 ![Embed](./screenshots/embed.png)
 <br>
 ![Embed](./screenshots/embed2.png)
-
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header"/>
+</p>
 ### 📩 Contact Section
 
 ![Contact](./screenshots/contact.png)
