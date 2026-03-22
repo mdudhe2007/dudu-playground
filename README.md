@@ -17,6 +17,9 @@ A fun and interactive gaming website where users can **play games instantly** or
 
 ## 📸 Snapshots
 
+### 🎥 Watch Intro Video
+[Click here to watch](./dudu%20playground.mp4)
+
 ### 🏠 Home Page
 
 ![Home](./screenshots/home.png)
