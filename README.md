@@ -20,28 +20,37 @@ A fun and interactive gaming website where users can **play games instantly** or
 ### 🎥 Watch Intro Video
 [Click here to watch](./dudu%20playground.mp4)
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header"/>
+<img src="https://github.com/andreasbm/readme/blob/master/assets/lines/rainbow.png?raw=true"/>
 </p>
+
 ### 🏠 Home Page
 
 ![Home](./screenshots/home.png)
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header"/>
+<img src="https://github.com/andreasbm/readme/blob/master/assets/lines/rainbow.png?raw=true"/>
 </p>
+
 ### 🎮 Games Section
 
-![Games](./screenshots/games.png)
+
+ ![Games](./screenshots/games.png) 
+
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header"/>
+<img src="https://github.com/andreasbm/readme/blob/master/assets/lines/rainbow.png?raw=true"/>
 </p>
+
 ### 🔗 Embed Page
 
 ![Embed](./screenshots/embed.png)
 <br>
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2"/></div>
+
 ![Embed](./screenshots/embed2.png)
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header"/>
+<img src="https://github.com/andreasbm/readme/blob/master/assets/lines/rainbow.png?raw=true"/>
 </p>
+
 ### 📩 Contact Section
 
 ![Contact](./screenshots/contact.png)
